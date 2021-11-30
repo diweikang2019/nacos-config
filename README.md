@@ -1,4 +1,33 @@
-#SpringBoot配置文件的加载顺序（优先级由高到低）
+##SpringBoot配置文件的加载顺序（优先级由高到低）  
+  
+**使用的jar包**
+```xml
+<dependency>
+    <groupId>com.alibaba.cloud</groupId>
+    <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+    <version>2.1.2.RELEASE</version>
+</dependency>
+```
+
+**添加bootstrap.properties文件**
+```properties
+spring.cloud.nacos.config.prefix=nacos-config
+spring.cloud.nacos.config.file-extension=properties
+spring.cloud.nacos.config.group=SERVER
+spring.cloud.nacos.config.server-addr=127.0.0.1:8848
+## nacos的namespace，需要使用id，用来隔离环境，默认会使用保留命名空间，public
+#spring.cloud.nacos.config.namespace=a21b99c3-9425-41da-9d70-859b9e1a7f65
+
+## nacos开关
+spring.cloud.nacos.config.refresh-enabled=true
+spring.cloud.nacos.config.enabled=true
+
+## nacos账号
+#spring.cloud.nacos.config.username=server
+#spring.cloud.nacos.config.password=39OaZJLWk4cwUWyW
+```
+
+**boot外部化配置优先级**
 * 命令行参数
 * java:comp/env里的JNDI属性
 * JVM系统属性
