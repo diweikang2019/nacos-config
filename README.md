@@ -1,4 +1,4 @@
-##SpringBoot配置文件的加载顺序（优先级由高到低）  
+##说明  
   
 **使用的jar包**
 ```xml
@@ -27,7 +27,7 @@ spring.cloud.nacos.config.enabled=true
 #spring.cloud.nacos.config.password=39OaZJLWk4cwUWyW
 ```
 
-**boot外部化配置优先级**
+**SpringBoot配置文件的加载顺序（优先级由高到低）**
 * 命令行参数
 * java:comp/env里的JNDI属性
 * JVM系统属性
