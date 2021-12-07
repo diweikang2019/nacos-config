@@ -42,3 +42,12 @@ spring.cloud.nacos.config.enabled=true
 * jar包内部的application.properties或application.yml(不带spring.profile)配置文件
 * @Configuration注解类上的@PropertySource
 * 通过SpringApplication.setDefaultProperties指定的默认属性
+
+
+**访问**  
+http://localhost:8848/nacos/index.html#/login  
+用户名：nacos  
+密 码：nacos  
+  
+  
+http://localhost:8080/getConfig
