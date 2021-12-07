@@ -19,8 +19,8 @@ public class NocasConfigController {
     @Value("${scope.value}")
     private String scopeValue;
 
-    @RequestMapping("/getConfig")
-    public String getConfig() {
+    @RequestMapping("/getNacosConfig")
+    public String getNacosConfig() {
         return configValue + "<br>" + scopeValue;
     }
 }

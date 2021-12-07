@@ -50,4 +50,4 @@ http://localhost:8848/nacos/index.html#/login
 密 码：nacos  
   
   
-http://localhost:8080/getConfig
+http://localhost:8080/getNacosConfig
